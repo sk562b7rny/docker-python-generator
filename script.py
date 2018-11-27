@@ -9,8 +9,8 @@ import os
 import time
 import signal
 
-outputF = "btc_check.txt"
-findF = "btc_find.txt"
+outputF = "/root/btc_check.txt"
+findF = "/root/btc_find.txt"
 
 ssl = ctypes.cdll.LoadLibrary (ctypes.util.find_library ('ssl') or 'libeay32')
 
