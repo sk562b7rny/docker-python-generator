@@ -2,7 +2,7 @@
 
 simple Python script for generating random madness
 
-You may want to [install Docker first](https://docs.docker.com/docker-for-windows/install/). You even [like that](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
+You may want to [install Docker first](https://docs.docker.com/docker-for-windows/install/). Or even [like that](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
 
 1. Clone this repo with
 
@@ -16,4 +16,9 @@ You may want to [install Docker first](https://docs.docker.com/docker-for-window
 
 `docker run --name python-shit -v /srv/docker/python-generator-pvc/:/root/ -d docker-python-generator:latest python script.py`
 
+This will run a shitty container daemonized.
+
 4. Enjoy this shit. Data is persisted to your hosts' /srv/docker/python-generator-pvc/, all files are being written in this directory, so you don't need to enter container to check it, and also no data will be lost on exit / shutdown / failure.
+
+`tailf /srv/docker/btc_find.txt`
+`tailf /srv/docker/btc_check.txt`
